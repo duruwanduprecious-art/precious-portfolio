@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220">
+  <rect width="400" height="220" fill="#141b26"/>
+  <rect x="0" y="0" width="400" height="220" fill="none" stroke="#263140" stroke-width="2"/>
+
+  <line x1="40" y1="170" x2="360" y2="170" stroke="#263140" stroke-width="1"/>
+  <line x1="40" y1="130" x2="360" y2="130" stroke="#1b2430" stroke-width="1"/>
+  <line x1="40" y1="90" x2="360" y2="90" stroke="#1b2430" stroke-width="1"/>
+  <line x1="40" y1="50" x2="360" y2="50" stroke="#1b2430" stroke-width="1"/>
+
+  <rect x="60" y="120" width="26" height="50" fill="#00d9ff" opacity="0.55" rx="3"/>
+  <rect x="100" y="90" width="26" height="80" fill="#00d9ff" opacity="0.75" rx="3"/>
+  <rect x="140" y="60" width="26" height="110" fill="#00d9ff" rx="3"/>
+  <rect x="180" y="100" width="26" height="70" fill="#00d9ff" opacity="0.65" rx="3"/>
+  <rect x="220" y="75" width="26" height="95" fill="#00d9ff" opacity="0.85" rx="3"/>
+
+  <g transform="translate(300,70)">
+    <circle cx="0" cy="0" r="26" fill="#1b2430" stroke="#263140"/>
+    <rect x="-4" y="-14" width="8" height="28" fill="#00d9ff"/>
+    <rect x="-14" y="-4" width="28" height="8" fill="#00d9ff"/>
+  </g>
+
+  <text x="40" y="200" fill="#64707d" font-family="monospace" font-size="12">NovaPharma — Executive BI Dashboard</text>
+</svg>

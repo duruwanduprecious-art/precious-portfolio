@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Precious Duruwandu | Data Analyst Portfolio</title>
+    <meta
+      name="description"
+      content="A sleek, modern, customizable one-page portfolio for Excel, Power BI and SQL data analysts."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&family=Playfair+Display:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- =====================================================p
+       EASY CUSTOMIZATION GUIDE
+       1. Change your name, title, social links and email below.
+       2. Change projects/case studies in js/data.js only.
+       3. Change brand color in css/style.css under :root --brand.
+       4. Replace images inside assets/images with your own.
+       ===================================================== -->
+
+    <!-- ===================== NAVIGATION ===================== -->
+    <header class="site-header" id="top">
+      <a
+        class="brand"
+        href="#top"
+        onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+      >
+        <span class="brand-mark">DA</span>
+        <span class="brand-line"></span>
+        <span class="brand-text">Portfolio</span>
+      </a>
+
+      <button
+        class="mobile-toggle"
+        aria-label="Open menu"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#toolbox">Toolbox</a>
+        <a href="#projects">Projects</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button
+        class="theme-toggle"
+        aria-label="Toggle dark and light mode"
+        title="Toggle theme"
+      >
+        <span class="sun">☀</span>
+        <span class="moon">☾</span>
+      </button>
+    </header>
+
+    <main>
+      <!-- ===================== HERO SECTION ===================== -->
+      <section class="hero section-pad">
+        <canvas id="particleCanvas" aria-hidden="true"></canvas>
+        <div class="hero-glow"></div>
+
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow"><span></span> Data Analyst Portfolio</p>
+            <h1>
+              The Right Number,
+              <br />
+              and the <em>Story</em>
+              <br />
+              It Was Hiding
+            </h1>
+            <p class="hero-text">
+              I don't publish a number until I've checked it against the raw
+              data myself, and once it holds up, I dig into what it's
+              actually telling me. Power BI, SQL and Python are how I get
+              there.
+            </p>
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary"
+                >View Projects <span>↓</span></a
+              >
+              <a href="#contact" class="btn btn-ghost">Hire Me</a>
+            </div>
+            <div class="hero-stats" aria-label="Portfolio stats">
+              <div><strong>Selected</strong><span>Projects</span></div>
+              <div><strong>5,015+</strong><span>Records Analyzed</span></div>
+              <div><strong>97%</strong><span>Data Quality Validated</span></div>
+            </div>
+          </div>
+
+          <aside class="hero-orbit reveal" aria-label="Analytics preview cards">
+            <div class="orbit-card card-a">
+              <small>Total Revenue (NovaPharma)</small>
+              <strong>$251.5M</strong>
+              <span>▲ 6.64% YoY</span>
+              <div class="mini-line">
+                <svg viewBox="0 0 220 60">
+                  <polyline
+                    class="trend-line"
+                    points="10,50 50,40 80,20 120,28 160,10 210,18"
+                    fill="none"
+                    stroke="#00d9ff"
+                    stroke-width="4"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="orbit-card card-b">
+              <small>Records Profiled</small>
+              <strong>5,015</strong>
+              <div class="bars"><i></i><i></i><i></i><i></i><i></i></div>
+            </div>
+            <div class="orbit-card card-c">
+              <small>Data Quality</small>
+              <div class="ring"><span>97%</span></div>
+            </div>
+            <div class="orbit-card card-d">
+              <small>Forecast Accuracy</small>
+              <strong>97.7%</strong>
+              <span>SQL + Power BI</span>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- ===================== ABOUT SECTION ===================== -->
+      <section class="section-pad about" id="about">
+        <div class="container about-grid">
+          <div class="about-card reveal">
+            <img
+              src="assets/images/profile.jpg"
+              alt="Precious Duruwandu"
+            />
+          </div>
+          <div class="reveal">
+            <p class="eyebrow"><span></span> About Me</p>
+            <h2>Precious Duruwandu</h2>
+            <p class="lead">
+              I'm a Data Analyst who came into this field from an unusual
+              place, a B.Sc. in Industrial Chemistry, not a typical tech
+              background. What carried over was a habit from the lab: don't
+              trust a result until you've verified it. That's shaped how I
+              work now: every dashboard number gets checked against the raw
+              data before I trust it, and once it holds up, I look for what
+              it's actually revealing. I work across Power BI, SQL and
+              Python.
+            </p>
+            <div class="skills">
+              <span>Power BI</span><span>SQL</span><span>Python</span
+              ><span>PostgreSQL</span><span>Excel</span><span>Data Cleaning</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== TOOLBOX SECTION ===================== -->
+      <section class="section-pad toolbox" id="toolbox">
+        <div class="container toolbox-grid">
+          <div class="reveal">
+            <p class="eyebrow"><span></span> Workflow</p>
+            <h2>The Toolbox Trace</h2>
+            <p class="lead">
+              Every project starts with exploration, not cleaning:
+              understanding the data before I touch it. From there, I clean,
+              query and visualize, using AI to work faster along the way.
+            </p>
+
+            <div class="tool-cards">
+              <article>
+                <span>01</span>
+                <h3>Explore First</h3>
+                <p>
+                  Before cleaning anything, I profile the raw dataset,
+                  checking its structure, missing values, duplicates and
+                  early patterns, so every decision that follows is based on
+                  what's actually there, not assumptions.
+                </p>
+              </article>
+              <article>
+                <span>02</span>
+                <h3>Clean, Query, Verify</h3>
+                <p>
+                  I clean what exploration reveals using Excel, Power Query
+                  and Python, then query it in SQL to answer the real
+                  business question, cross-checking anything surprising
+                  before I trust it.
+                </p>
+              </article>
+              <article>
+                <span>03</span>
+                <h3>Visualize & Work Smarter</h3>
+                <p>
+                  I turn verified analysis into interactive dashboards in
+                  Power BI, Excel or Looker Studio, and use AI and automation
+                  throughout to speed up repetitive work without skipping the
+                  verification that makes the answer trustworthy.
+                </p>
+              </article>
+            </div>
+          </div>
+
+          <div class="code-window reveal" aria-label="Sample DAX code block">
+            <div class="window-dots">
+              <span></span><span></span><span></span>
+            </div>
+            <pre><code>// DAX Measure, NovaPharma Dashboard
+Total Revenue = SUM(fact_sales_clean[revenue])
+
+Revenue YoY % =
+DIVIDE(
+    [Total Revenue] - [Revenue LY],
+    [Revenue LY]
+)
+
+// Paired with a matching SQL query
+// for independent validation before
+// it shipped to the dashboard</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== PROJECT GALLERY ===================== -->
+      <section class="section-pad" id="projects">
+        <div class="container section-head reveal">
+          <p class="eyebrow"><span></span> Selected Work</p>
+          <h2>Projects</h2>
+          <p>
+            Independent projects where I explored, cleaned and analyzed real
+            datasets end-to-end, from raw files to a dashboard that answers
+            a real question.
+          </p>
+        </div>
+        <div class="gallery-wrap reveal">
+          <button class="gallery-btn prev" aria-label="Scroll projects left">
+            ‹
+          </button>
+          <div class="project-gallery" id="projectGallery"></div>
+          <button class="gallery-btn next" aria-label="Scroll projects right">
+            ›
+          </button>
+        </div>
+      </section>
+
+      <!-- ===================== SERVICES ===================== -->
+      <section class="section-pad services" id="services">
+        <div class="container section-head reveal">
+          <p class="eyebrow"><span></span> Services</p>
+
+          <h2>Let's Build Something</h2>
+
+          <p class="lead">
+            Practical data support for small businesses and teams, from
+            messy files to a dashboard you can act on.
+          </p>
+        </div>
+
+        <div class="container services-grid" id="servicesGrid"></div>
+      </section>
+
+      <!-- ===================== CONTACT SECTION ===================== -->
+      <section class="section-pad contact" id="contact">
+        <div class="container contact-grid">
+          <div class="reveal">
+            <p class="eyebrow"><span></span> Contact</p>
+            <h2>Let’s build something useful with your data.</h2>
+            <p class="lead">
+              Need your data cleaned, analyzed, or turned into a dashboard?
+              Send a message and I will reply.
+            </p>
+            <ul class="contact-list">
+              <li>
+                ✉ <a href="mailto:duruwanduprecious@gmail.com">duruwanduprecious@gmail.com</a>
+              </li>
+              <li>
+                🔗
+                <a
+                  href="https://www.linkedin.com/in/pipresh"
+                  target="_blank"
+                  rel="noopener"
+                  >LinkedIn Profile</a
+                >
+              </li>
+              <li>🌍 Available for remote projects worldwide</li>
+            </ul>
+          </div>
+
+          <!-- CONTACT FORM GUIDE:
+             This form uses FormSubmit. Replace yourname@email.com below with your real email.
+             First submission may ask you to verify your email. After that, messages go to your inbox.
+             Alternative: use Formspree, Netlify Forms or EmailJS.
+        -->
+          <form
+            class="contact-form reveal"
+            action="https://formsubmit.co/duruwanduprecious@gmail.com"
+            method="POST"
+          >
+            <input
+              type="hidden"
+              name="_subject"
+              value="New Portfolio Message"
+            />
+            <input type="hidden" name="_template" value="table" />
+            <label
+              >Name<input
+                type="text"
+                name="name"
+                placeholder="Your name"
+                required
+            /></label>
+            <label
+              >Email<input
+                type="email"
+                name="email"
+                placeholder="your@email.com"
+                required
+            /></label>
+            <label
+              >Message<textarea
+                name="message"
+                rows="6"
+                placeholder="Tell me about your data challenge..."
+                required
+              ></textarea>
+            </label>
+            <button class="btn btn-primary" type="submit">
+              Send Message <span>↗</span>
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+      <div class="container footer-grid">
+        <!-- Left -->
+        <div class="footer-about">
+          <h3>Precious Duruwandu</h3>
+
+          <p>
+            Turning raw data into clear business decisions through Power BI,
+            Excel, SQL and modern analytics solutions.
+          </p>
+        </div>
+
+        <!-- Center -->
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <!-- Right -->
+        <div class="footer-social">
+          <h4>Connect With Me</h4>
+
+          <div class="social-icons">
+            <!-- Email -->
+            <a href="mailto:duruwanduprecious@gmail.com" aria-label="Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M4 5h16v14H4z" />
+                <path d="M4 7l8 6 8-6" />
+              </svg>
+            </a>
+
+            <!-- LinkedIn -->
+            <a
+              href="https://www.linkedin.com/in/pipresh"
+              target="_blank"
+              aria-label="LinkedIn"
+            >
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4V9h4v2" />
+                <rect x="2" y="9" width="4" height="12" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom container">
+        <p>© <span id="year"></span> Precious Duruwandu. All rights reserved.</p>
+
+        <p>Built with HTML, CSS & JavaScript</p>
+      </div>
+    </footer>
+
+    <!-- ===================== CASE STUDY MODAL ===================== -->
+    <dialog class="modal" id="caseModal">
+      <button class="modal-close" aria-label="Close case study">×</button>
+      <div id="modalContent"></div>
+    </dialog>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

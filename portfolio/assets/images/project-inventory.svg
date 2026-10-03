@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220">
+  <rect width="400" height="220" fill="#141b26"/>
+  <rect x="0" y="0" width="400" height="220" fill="none" stroke="#263140" stroke-width="2"/>
+
+  <!-- line chart representing cashflow trend -->
+  <polyline points="40,150 90,140 140,160 190,110 240,120 290,80 340,95"
+    fill="none" stroke="#00d9ff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="340" cy="95" r="5" fill="#00d9ff"/>
+
+  <line x1="40" y1="180" x2="360" y2="180" stroke="#263140" stroke-width="1"/>
+
+  <!-- bank icon -->
+  <g transform="translate(80,55)">
+    <circle cx="0" cy="0" r="24" fill="#1b2430" stroke="#263140"/>
+    <path d="M-12,4 L0,-8 L12,4 Z" fill="#00d9ff"/>
+    <rect x="-12" y="4" width="24" height="3" fill="#00d9ff"/>
+    <rect x="-9" y="7" width="3" height="9" fill="#00d9ff"/>
+    <rect x="-1.5" y="7" width="3" height="9" fill="#00d9ff"/>
+    <rect x="6" y="7" width="3" height="9" fill="#00d9ff"/>
+  </g>
+
+  <text x="40" y="200" fill="#64707d" font-family="monospace" font-size="12">Personal Banking Transaction Analysis</text>
+</svg>
